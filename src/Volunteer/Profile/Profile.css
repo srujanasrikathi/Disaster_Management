@@ -1,0 +1,66 @@
+.dashboard {
+    background-color: #f0f4f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.detail-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.detail-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+strong {
+    color: #007bff;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .dashboard {
+        padding: 15px; /* Reduce padding for smaller screens */
+        border-radius: 5px; /* Slightly smaller border radius */
+    }
+
+    h1 {
+        font-size: 20px; /* Reduce font size for smaller screens */
+        margin-bottom: 15px; /* Reduce margin */
+    }
+
+    .detail-item {
+        padding: 10px; /* Adjust padding for detail items */
+        margin: 8px 0; /* Adjust margin for detail items */
+    }
+
+    strong {
+        font-size: 14px; /* Adjust strong text size */
+    }
+}

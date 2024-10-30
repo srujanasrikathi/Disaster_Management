@@ -1,0 +1,171 @@
+.states_container {
+  width: 100%;
+  height: fit-content;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  justify-content: space-between;
+  /* background-color: rgb(187, 179, 179); */
+
+}
+
+.state {
+  width: 35%;
+  height: 100%;
+  /* border: 2px solid black; */
+}
+
+
+.checklists {
+  width: 20%;
+  height: 100%;
+  padding-top: 50px;
+  padding-left: 10px;
+}
+
+h3 {
+  /* padding-top: 20px; */
+  position: relative;
+  top: 20px;
+  padding-left: 15px;
+}
+
+.search_input {
+  width: 80%;
+  height: 50px;
+  display: flex;
+  /* border: 2px solid black; */
+  justify-content: space-around;
+}
+
+/* From Uiverse.io by HetPatel69 */
+.input {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  /* background-color: #0D1117; */
+  justify-content: space-evenly;
+  border-radius: 5px;
+  height: 450px;
+  /* border: 2px solid red; */
+
+}
+
+.value {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  color: white;
+  display: flex;
+  position: relative;
+  gap: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+
+.value:focus,
+.value:active {
+  /* background-color: #1A1F24; */
+  outline: none;
+}
+
+.value::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -10px;
+  width: 5px;
+  height: 80%;
+  background-color: #75acf8;
+  border-radius: 5px;
+  opacity: 0;
+}
+
+.value:focus::before,
+.value:active::before {
+  opacity: 1;
+}
+
+.value svg {
+  width: 15px
+}
+
+.input:hover> :not(.value:hover) {
+  transition: 300ms;
+  filter: blur(1px);
+  transform: scale(0.95, 0.95);
+}
+
+
+.search_cities {
+  width: 70%;
+  height: 100%;
+  padding-left: 20px;
+  border: none;
+  border-radius: 25px;
+  border: 3px solid black;
+  font-size: 15px;
+}
+
+
+.select_state {
+  border: none;
+  /* border: 2px solid red; */
+  width: 200px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.search_container2 {
+  width: 80%;
+  height: fit-content;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+}
+
+
+.items_container {
+  width: 100%;
+  /* border: 2px solid red; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 25px;
+  height: fit-content;
+  padding-left: 30px;
+}
+
+.input button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+@media (max-width: 770px) {
+  .input {
+    width: 80%;  
+    max-width: 210px;  
+  }
+  .input button {
+    /* width: 100%;  */
+    width: 160px;  
+    font-weight: normal; 
+  }
+  .search_input{
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .search_cities{
+    width: 50%;
+  }
+  h3{
+    display: none;
+  }
+  .states_container{
+    padding-top: 30px;
+  }
+}
+

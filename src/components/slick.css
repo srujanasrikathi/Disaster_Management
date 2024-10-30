@@ -1,0 +1,146 @@
+.slick-container {
+  margin: 20px auto;
+  max-width: 900px;
+  padding: 20px;
+}
+
+.slick-item {
+  background: #f0f0f0;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+  margin: 0 10px;
+}
+
+.weather-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather-card img {
+  width: 100px;
+  height: 100px;
+}
+
+.temperature {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.weather-description {
+  margin: 5px 0;
+  font-size: 1.2rem;
+}
+
+.additional-info {
+  margin-top: 15px;
+}
+
+.rain-alert-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.rain-alert-button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 1440px) {
+  .slick-container {
+      max-width: 850px;
+  }
+
+  .slick-item {
+      padding: 18px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .slick-container {
+      max-width: 750px;
+  }
+
+  .slick-item {
+      padding: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slick-container {
+      max-width: 600px;
+  }
+
+  .slick-item {
+      padding: 14px;
+  }
+
+  .weather-card img {
+      width: 90px;
+      height: 90px;
+  }
+}
+
+@media (max-width: 425px) {
+  .slick-container {
+      max-width: 400px;
+  }
+
+  .slick-item {
+      padding: 12px;
+  }
+
+  .weather-card img {
+      width: 80px;
+      height: 80px;
+  }
+
+  .temperature {
+      font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .slick-container {
+      max-width: 350px;
+  }
+
+  .slick-item {
+      padding: 10px;
+  }
+
+  .weather-card img {
+      width: 70px;
+      height: 70px;
+  }
+
+  .temperature {
+      font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .slick-container {
+      max-width: 300px;
+  }
+
+  .slick-item {
+      padding: 8px;
+  }
+
+  .weather-card img {
+      width: 60px;
+      height: 60px;
+  }
+
+  .temperature {
+      font-size: 1.4rem;
+  }
+}

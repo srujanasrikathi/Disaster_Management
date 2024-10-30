@@ -1,0 +1,132 @@
+body {
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+}
+
+.main-form-g {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #007bff;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn-g 0.5s ease-in-out, slideIn-g 0.5s ease-in-out; /* Combined animations */
+}
+
+.label-g {
+    width: 90%;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #007bff; /* Changed label color */
+}
+
+.input-field1-g {
+    width: 95%; /* Full width for consistency */
+    padding: 10px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: border 0.3s;
+    background-color: #f9f9f9;
+}
+
+.input-field-g {
+    width: 90%; /* Full width for consistency */
+    padding: 10px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: border 0.3s;
+    background-color: #f9f9f9; /* Light background for inputs */
+}
+
+.input-field-g:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+.btns-g {
+    display: flex;
+    width: 95%; 
+    justify-content: space-between;
+}
+
+.button1-g {
+    width: 120%; 
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.button-g {
+    width: 95%; 
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.button-g:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn-g {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn-g {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive behavior */
+@media (max-width: 600px) {
+    .main-form-g {
+        padding: 15px; /* Reduce padding for smaller screens */
+        border-radius: 8px; /* Slightly smaller border radius */
+    }
+
+    .label-g {
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+
+    .input-field1-g, .input-field-g {
+        width: 100%; /* Full width on smaller screens */
+        padding: 8px; /* Adjust padding */
+    }
+
+    .button-g {
+        padding: 8px 12px; /* Adjust button padding */
+        font-size: 14px; /* Adjust font size */
+    }
+
+    .btns-g {
+        flex-direction: column; /* Stack buttons on smaller screens */
+        align-items: stretch; /* Stretch buttons to full width */
+    }
+
+    .btns-g .button-g {
+        margin-bottom: 10px; /* Space between stacked buttons */
+    }
+}

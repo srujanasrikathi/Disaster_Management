@@ -1,0 +1,235 @@
+body {
+    height: auto;
+    background-color: rgb(210,205,205);
+}
+.con-j{
+    height: auto;
+    width: 100%;
+    color: #001f3f;
+}
+.com-j{
+    font-size: 50px;
+    color: #1b3e61;
+    font-style: oblique;
+}
+.con-j {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.card-row-j {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.card-container-j {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+    flex: 1 1 300px;
+    max-width: 500px;
+}
+.card-j {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1b3e61;
+}
+.card-image-j {
+    /* width: 70%; */
+    height: 200px;
+}
+.join-button-j {
+    background-color:rgb(210,205,205);
+    color:#1b3e61;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    border-radius: 16px;
+    width: 100px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+.join-button-j:hover {
+    transform: scale(1.2);
+}
+.options-j{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: palevioletred;
+    margin-top: 10px;
+}
+.icon-container-j{
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    position: relative;
+    color:rgb(210,205,205);
+}
+.icon-j{
+    cursor: pointer;
+    font-size: 24px;
+}
+.icon-name-j{
+    display: none;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #001f3f;
+    padding: 5px;
+    border-radius: 16px;
+    color: white;
+    white-space: nowrap;
+}
+.icon-container-j:hover .icon-name-j {
+    display: block;
+}
+.card-name-j {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    width:120px;
+    background-color:rgb(210,205,205);
+    border-radius: 16px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1b3e61;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+@media (max-width: 1024px) {
+    .con {
+        height: auto;
+    }
+    .com {
+        font-size: 32px;
+        margin-top: 250px;
+    }
+    .card-name {
+        font-size: 15px;
+    }
+    .join-button {
+        width: 90px;
+    }
+    .card {
+        width: 338px;
+        margin-bottom: 20px;
+    }
+    .card-row {
+        margin-top: 50px;
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .con {
+        height: auto;
+    }
+    .com {
+        font-size: 32px;
+        margin-top: 65px;
+    }
+    .card-name {
+        font-size: 15px;
+    }
+    .join-button {
+        width: 80px;
+    }
+    .card {
+        width: 400px;
+        height: 300px;
+        margin-bottom: 20px;
+    }
+    .card-row {
+        margin-top: 20px;
+        width: 80%;
+    }
+    .card-image {
+        width: 50%;
+    }
+    .card-container {
+        width: 50%;
+        margin-left: -50px;
+    }
+}
+@media (max-width: 435px) {
+    .con {
+        height: auto;
+    }
+    .card {
+        width: 80%;
+    }
+    .card-image {
+        width: 100%;
+        height: 300px;
+        margin-left: 20px;
+    }
+    .join-button {
+        width: 70px;
+    }
+    .com {
+        font-size: 40px;
+    }
+    .options {
+        flex-direction: row;
+    }
+    .icon-container {
+        margin: 4px;
+    }
+    .card-container {
+        width: 40%;
+        margin-left: 20px;
+    }
+    .card-row {
+        width: 100%;
+    }
+}
+@media (max-width: 380px) {
+    .con {
+        height: auto;
+    }
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .card-container {
+        width: 80%;
+        height: auto;
+        margin-left: 50px;
+        margin-bottom: -50px;
+    }
+    .card-image {
+        width: 70%;
+        margin: 5px;
+        height: 100px;
+    }
+    .join-button {
+        width: 70px;
+    }
+    .com {
+        font-size: 35px;
+    }
+    .options {
+        flex-direction: row;
+    }
+    .icon-container {
+        margin: 2px;
+    }
+}
