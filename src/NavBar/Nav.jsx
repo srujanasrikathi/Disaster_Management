@@ -31,8 +31,8 @@ function Nav() {
                         
                        <Link to="/" className="link-style"> <div className='options'><FaHome />&nbsp;Home</div></Link>
                         <Link to='/PreviousEvents' className="link-style"><div className='options'  ><TbAlertSquareFilled />&nbsp;Previous Events</div></Link>
-                       <Link to='/WeatherUpdates'className="link-style" ><div className='options'><TiWeatherPartlySunny />&nbsp;Weather Updates</div></Link> 
-                       <Link to='/EmergencyContacts' className='link-style'> <div className='options'><RiContactsFill />&nbsp;Emergency Contacts</div></Link>
+                       <Link to='/weather'className="link-style" ><div className='options'><TiWeatherPartlySunny />&nbsp;Weather Updates</div></Link> 
+                       <Link to='/preparedness' className='link-style'> <div className='options'><RiContactsFill />&nbsp;Emergency Contacts</div></Link>
                         <Link to='/CommunityForum' className="link-style"><div className='options'><GiDiscussion />&nbsp;Community Forum</div></Link>
                         
                     </div>

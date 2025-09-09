@@ -4,7 +4,7 @@ body {
 }
 
 .main-form-g {
-    max-width: 500px;
+    width: 600px !important;
     margin: auto;
     padding: 20px;
     border: 1px solid #007bff;
